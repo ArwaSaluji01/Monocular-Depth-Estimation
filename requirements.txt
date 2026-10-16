@@ -8,3 +8,5 @@ timm
 pytest
 h5py
 scipy
+transformers
+accelerate

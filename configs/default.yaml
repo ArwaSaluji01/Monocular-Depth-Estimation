@@ -1,0 +1,30 @@
+project:
+  name: monocular-depth-estimation
+  seed: 42
+
+dataset:
+  name: nyu_depth_v2
+  root: data
+  image_size: [256, 320]
+
+model:
+  name: pretrained_depth
+  checkpoint_dir: checkpoints
+
+evaluation:
+  metrics:
+    - abs_rel
+    - rmse
+    - rmse_log
+    - delta1
+
+training:
+  batch_size: 8
+  epochs: 10
+  learning_rate: 0.0001
+  num_workers: 2
+
+paths:
+  predictions: outputs/predictions
+  visualizations: outputs/visualizations
+  reports: outputs/reports

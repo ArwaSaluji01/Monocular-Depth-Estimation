@@ -1,0 +1,29 @@
+# Python
+__pycache__/
+*.py[cod]
+venv/
+.venv/
+.env
+
+# IDE
+.vscode/
+.idea/
+
+# Datasets
+data/raw/*
+data/processed/*
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+
+# Generated outputs
+outputs/predictions/*
+outputs/visualizations/*
+outputs/reports/*
+
+# Model weights
+checkpoints/*
+!checkpoints/.gitkeep
+
+# Test and cache files
+.pytest_cache/
+.coverage

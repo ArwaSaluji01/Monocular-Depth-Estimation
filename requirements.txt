@@ -1,0 +1,8 @@
+numpy
+Pillow
+matplotlib
+opencv-python
+PyYAML
+tqdm
+timm
+pytest
